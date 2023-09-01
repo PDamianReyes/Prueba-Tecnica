@@ -1,83 +1,27 @@
-# Prueba-Tecnica
-Prueba Técnica en Angular 
+# GithubUserSearchApp
 
- Índice
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
-- [Introducción](#introducción)
-- [Requisitos funcionales](#requisitos-funcionales)
-- [Plus](#plus)
-- [Instalación y Configuración](#instalación-y-configuración)
-- [Estructura de Código](#estructura-de-código)
-- [Uso](#uso)
-- [Errores y Soluciones](#errores-y-soluciones)
+## Development server
 
- Introducción
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Esta documentación describe una aplicación web que permite a los usuarios buscar perfiles de GitHub utilizando un campo de texto y un botón. La aplicación también muestra información detallada de cada perfil y proporciona funcionalidades adicionales.
+## Code scaffolding
 
-Requisitos funcionales
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-1. **Campo de Entrada de Texto y Botón**
-    - Incluir un campo de entrada de texto y un botón para que los usuarios puedan ingresar el nombre del usuario que desean buscar en GitHub.
+## Build
 
-2. **Mostrar Resultados**
-    - Mostrar los primeros 10 resultados de la búsqueda, incluyendo el nombre de usuario (`user.login`) y el id (`user.id`).
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-3. **Enlace al Perfil de Usuario**
-    - Hacer que cada perfil de usuario en los resultados sea un enlace. Al hacer clic en el enlace, se debe abrir un diálogo/modal que muestra más información sobre ese usuario.
+## Running unit tests
 
-4. **Componente Independiente**
-    - Crear un componente independiente que lea un parámetro de la URL y luego obtenga los datos del usuario de GitHub mediante el API `https://api.github.com/users/YOUR_NAME`.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-5. **Datos del Usuario**
-    - Incluir la imagen del usuario (`avatar_url`) y algún otro dato a elección en el componente.
+## Running end-to-end tests
 
-6. **Validadores**
-    - Asegurarse de que el texto de búsqueda tenga un mínimo de 4 caracteres.
-    - No permitir la búsqueda de la palabra "raspberry".
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-Plus
+## Further help
 
-1. **Librería de Gráficos**
-    - Incluir cualquier librería de gráficos y utilizar uno para mostrar el número de seguidores del usuario.
-
-2. **Componente de Errores**
-    - Añadir un componente que muestre mensajes de errores generales en toda la aplicación.
-
-3. **Diseño Responsivo**
-    - Asegurarse de que la aplicación sea responsive en distintos dispositivos.
-
- Instalación y Configuración
-
-Requisitos previos
-
-- Node.js
-- Angular CLI
-- Conexión a Internet para acceder a la API de GitHub
-
- Pasos
-
-1. Clonar el repositorio
-2. Ir al directorio del proyecto y ejecutar `npm install`
-3. Ejecutar `ng serve` para iniciar el servidor de desarrollo
-4. Abrir `http://localhost:4200` en el navegador
-
-Estructura de Código
-
-- `src/app/search`: Contiene la lógica para el campo de búsqueda y mostrar los resultados.
-- `src/app/user-detail`: Componente para mostrar los detalles del usuario.
-- `src/app/error-message`: Componente para mostrar mensajes de error.
-- `src/assets`: Contiene assets como imágenes y CSS.
-  
- Uso
-
-1. Abra la aplicación web.
-2. Ingrese el nombre del usuario de GitHub que desea buscar en el campo de texto.
-3. Haga clic en el botón "Buscar".
-4. Revise los 10 primeros resultados.
-5. Haga clic en cualquier perfil para ver más detalles.
-
- Errores y Soluciones
-
-- **Error de conexión a la API**: Asegúrese de tener una conexión a Internet activa.
-- **Búsqueda insatisfactoria**: Verifique que su búsqueda tenga más de 4 caracteres y no contenga la palabra "raspberry".
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
